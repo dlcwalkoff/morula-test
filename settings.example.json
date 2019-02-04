@@ -1,18 +1,14 @@
 {
     "facebook": {
-        "appId": "12345",
-        "secret": "1234567"
+        "appId": "APP_ID",
+        "secret": "APP_SECRET"
     },
     "github": {
-        "appId": "12345",
-        "secret": "1234567"
+        "appId": "APP_ID",
+        "secret": "APP_SECRET"
     },
     "google": {
-        "appId": "12345",
-        "secret": "1234567"
-    },
-    "twitter": {
-        "appId": "12345",
-        "secret": "1234567"
+        "appId": "APP_ID",
+        "secret": "APP_SECRET"
     }
 }
