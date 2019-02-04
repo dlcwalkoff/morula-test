@@ -1,0 +1,18 @@
+{
+    "facebook": {
+        "appId": "12345",
+        "secret": "1234567"
+    },
+    "github": {
+        "appId": "12345",
+        "secret": "1234567"
+    },
+    "google": {
+        "appId": "12345",
+        "secret": "1234567"
+    },
+    "twitter": {
+        "appId": "12345",
+        "secret": "1234567"
+    }
+}
