@@ -1,5 +1,5 @@
 import { Template } from 'meteor/templating';
-import { ReactiveVar } from 'meteor/reactive-var';
+import { Meteor } from 'meteor/meteor';
 
 import './main.html';
 
@@ -10,3 +10,17 @@ FlowRouter.route('/', {
   }
 });
 
+Template.main.events({
+  'click #killMe': function(event) {
+    Meteor.users.remove({ _id: Meteor.userId() }, () => {
+      Accounts.logout();
+    });
+
+    return false;
+  },
+  'click #logoutMe': function(event) {
+    Accounts.logout();
+
+    return false;
+  }
+});

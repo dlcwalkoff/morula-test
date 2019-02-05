@@ -13,5 +13,14 @@
     
     {{#if currentUser}}
         <div>I'm here!</div>
+
+        {{#if currentUser.profile.name}}
+            <div>My name is {{currentUser.profile.name}}</div>
+        {{else}}
+            <div>But i'm nameless 😒</div>
+        {{/if}}
+        
+        <div>My email is {{currentUser.profile.email}}</div>
+        <div>You can <a href="#" id="killMe">kill me</a> 😨 or just <a href="#" id="logoutMe">logout me</a> 😅</div>
     {{/if}}
 </template>
