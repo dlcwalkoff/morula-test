@@ -5,9 +5,13 @@ Meteor.startup(() => {
   // code to run on server at startup
 });
 
+Meteor.users.allow({
+  remove() { return true; }
+});
+
 Accounts.onCreateUser(function(options, user) {
   // Use provided profile in options, or create an empty object
-  user.profile = options.profile || {};
+  user.profile = options.profile || { email: options.email };
   user.services = user.services || {};
 
   if (!user.profile.email) {
