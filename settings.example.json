@@ -4,11 +4,11 @@
         "secret": "APP_SECRET"
     },
     "github": {
-        "appId": "APP_ID",
+        "clientId": "APP_ID",
         "secret": "APP_SECRET"
     },
     "google": {
-        "appId": "APP_ID",
+        "clientId": "APP_ID",
         "secret": "APP_SECRET"
     }
 }
