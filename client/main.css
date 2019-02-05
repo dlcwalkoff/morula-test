@@ -1,4 +1,10 @@
-body {
-  padding: 10px;
+html {
   font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightslategray;
 }
